@@ -77,4 +77,4 @@ document.write(`Вы получили ${c} кг метров`);
 /* const a = true,
       b = false; */
     
-/* console.log(5 !== '5'); */
+console.log(5 !== '5');
