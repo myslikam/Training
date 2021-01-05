@@ -101,7 +101,7 @@ if (a > b) {
     document.write('Мало');
  }
  */
-/*  (yearInput == yearMy) ? document.write('Все верно') : (yearInput > yearMy) ? document.write('Много') : document.write('Мало'); */
+
 
 /* 
  let yearMy = 45;
