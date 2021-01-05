@@ -77,4 +77,45 @@ document.write(`Вы получили ${c} кг метров`);
 /* const a = true,
       b = false; */
     
-console.log(5 !== '5');
+/* console.log(5 !== '5'); */
+/* 
+let a = 10;
+let b = 15;
+
+if (a > b) {
+    console.log("Ok");
+} else {
+    console.log("No Ok");
+}
+ */
+
+ 
+/*  let yearInput = prompt("Сколько мне лет");
+ let yearMy = 45; */
+
+ /* if (yearInput == yearMy) {
+     document.write('Все верно');
+ } else if (yearInput > yearMy) {
+    document.write('Много');
+ } else {
+    document.write('Мало');
+ }
+ */
+/*  (yearInput == yearMy) ? document.write('Все верно') : (yearInput > yearMy) ? document.write('Много') : document.write('Мало'); */
+
+/* 
+ let yearMy = 45;
+
+ while (yearMy <= 50) {
+     console.log (yearMy);
+     yearMy++;
+ } */
+
+ /* let yearMy = 1;
+
+ for (let i=1; i<=5; i++) {
+    console.log (yearMy);
+    yearMy++;
+ } */
+
+ 
