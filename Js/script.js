@@ -1,121 +1,54 @@
 /* 'use strict'; */
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?','');
+console.log(numberOfFilms);
 
-/* let number = 5;
-const MuyNumber = 25;
-number = 25;
-console.log(number);
-
-number = MuyNumber - 25;
-console.log(number);
- 
-const age = {
-    name: "Sasha",
-    higHt: 176,
-    family: "myslik"
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
+/* const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', ''); */
 
-console.log(age.higHt);
-
-const arr = ["barsik", "tosha"];
-
-console.log(arr[1]); */
-
-/* alert("Hello"); */
-
-/* const newChips = confirm("Будешь чипсы");
-console.log(newChips); */
-/* 
-let ear = +prompt('Сколько тебе лет', 'напиши');
-console.log(typeof(ear)); */
-
-/* const arr = [];
-
-/* arr[0] = prompt('Имя','');
-arr[1] = prompt('Фамилия','');
-arr[2] = prompt('Год рождения',''); 
-/* document.write(arr); */
-
-/* console.log(typeof(arr));  */
-
-/* let collInfo = [];
-
-collInfo[0] = +prompt('Расход сараем','Гкал');
-collInfo[1] = +prompt('Расход сараем2','Гкал');
-
-let summa = collInfo[0] + collInfo[1];
-
-document.write(`потребление ${summa} Гкал`); */
-
-/* let nameLoh = prompt('Введите имя','имя');
-alert(`Привет ${nameLoh}`); */
-
-/* let a = +prompt('Введите вес','');
-let b = +prompt('Введите толщину','');
-let c = a + b;
-document.write(`Вы получили ${c} кг метров`);
- */
-
-/*  let incr = 10,
-     decr = 10; */
-
-/*  ++incr;
- --decr;
- console.log(incr);
- console.log(decr); */
-
- /* --incr;
- ++decr; */
-/*  console.log(incr++);
- console.log(decr--);
- console.log(incr);
- console.log(decr); */
-
-/*  console.log(11%4); */
-
-/* console.log(5*2 === '10'); */
-
-/* const a = true,
-      b = false; */
-    
-/* console.log(5 !== '5'); */
-/* 
-let a = 10;
-let b = 15;
-
-if (a > b) {
-    console.log("Ok");
-} else {
-    console.log("No Ok");
+for (let i = 0; i < 2; i++) {
+    let a = prompt('Один из последних просмотренных фильмов?', '');
+    let b = prompt('На сколько оцените его?', '');
+    if (a != '' && b != '' && a != null && b != null && a.length < 50 ) {
+        personalMovieDB.movies[a] = b;
+        console.log('ok');         
+    } else {
+        console.log('err');  
+        i--;
+    }
 }
- */
 
- 
-/*  let yearInput = prompt("Сколько мне лет");
- let yearMy = 45; */
-
- /* if (yearInput == yearMy) {
-     document.write('Все верно');
- } else if (yearInput > yearMy) {
-    document.write('Много');
- } else {
-    document.write('Мало');
- }
- */
+/* let i = 0;
+let a = prompt('Один из последних просмотренных фильмов?', '');
+let b = prompt('На сколько оцените его?', '');
+ while (a != '' && b != '' && a != null && b != null && a.length < 50 && i <= 2) {
+    a = prompt('Один из последних просмотренных фильмов?', '');
+    b = prompt('На сколько оцените его?', '');
+    personalMovieDB.movies[a] = b;
+    console.log('ok');
+    i++; 
+ }  i--; */
 
 
-/* 
- let yearMy = 45;
 
- while (yearMy <= 50) {
-     console.log (yearMy);
-     yearMy++;
- } */
+console.log(personalMovieDB);
 
- /* let yearMy = 1;
-
- for (let i=1; i<=5; i++) {
-    console.log (yearMy);
-    yearMy++;
- } */
+if (personalMovieDB.count < 10) {
+    console.log("Просмотренно мало фильмов");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log("Класический зритель");
+} else if (personalMovieDB.count >= 30) {
+    console.log("Киноман");
+} else {
+    console.log("Ошибка");
+}
 
  
