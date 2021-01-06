@@ -118,4 +118,33 @@ if (a > b) {
     yearMy++;
  } */
 
+ let num = 20; 
  
+function showFirstMesseng(text) {
+    console.log(text);
+    let num = 30;
+    console.log(num);    
+}
+
+showFirstMesseng('Привет');
+console.log(num);
+
+
+console.log(calc(2, 4));
+console.log(calc(3, 6));
+console.log(calc(5, 2));
+
+function calc(a, b) {
+    return(a + b);
+}
+
+
+
+
+function ret() {
+    let num = 50;
+    return num;
+}
+
+let NewNum = ret();
+console.log(NewNum);
