@@ -118,7 +118,7 @@ if (a > b) {
     yearMy++;
  } */
 
- let num = 20; 
+ /* let num = 20; 
  
 function showFirstMesseng(text) {
     console.log(text);
@@ -147,4 +147,35 @@ function ret() {
 }
 
 let NewNum = ret();
-console.log(NewNum);
+console.log(NewNum); */
+
+/* let tex = "text";
+
+console.log(tex.length); */
+
+let arr = [1, 2, 4];
+console.log(arr.length);
+
+let tex = "teXt";
+
+console.log(tex.toUpperCase());
+console.log(tex);
+console.log(tex.toLowerCase());
+
+
+
+const fruet = "Привет мир";
+console.log(fruet.substr(5, 3));
+
+
+console.log(fruet.slice(-10, -4));
+
+console.log(fruet.indexOf('мирf'));
+console.log(fruet.slice(7, 10));
+
+let a = 10.5;
+console.log(Math.round(a));
+
+let b = '10.5px';
+console.log(parseInt(b));
+console.log(parseFloat(b));
