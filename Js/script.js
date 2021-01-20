@@ -153,7 +153,7 @@ console.log(NewNum); */
 
 console.log(tex.length); */
 
-let arr = [1, 2, 4];
+/* let arr = [1, 2, 4];
 console.log(arr.length);
 
 let tex = "teXt";
@@ -178,4 +178,101 @@ console.log(Math.round(a));
 
 let b = '10.5px';
 console.log(parseInt(b));
-console.log(parseFloat(b));
+console.log(parseFloat(b)); */
+
+/* let a = 5;
+let b = a;
+b = b +5;
+console.log(a);
+console.log(b);
+
+let mayFun = {
+    a:7,
+    b:12
+};
+
+let c = mayFun;
+c.a = 12;
+
+console.log(mayFun); */
+
+
+/* 
+function copy(mainObj) {
+    let objCopy = {};
+
+    let key;
+    for (key in mainObj) {
+        objCopy[key] = mainObj[key];
+    }
+    return objCopy;
+} 
+
+const numbers = {
+    a: 2,
+    b: 5,
+    c: {
+        x: 10,
+        y: 20
+    }
+};
+
+const newNumbers = copy(numbers);
+newNumbers.a =333;
+
+console.log(newNumbers);
+console.log(numbers);
+
+ */
+
+/* while (num < 55) {
+    console.log(num);
+    num++;
+} */
+
+/* do {
+    console.log(num);
+    num++;
+}
+while (num > 55); */
+
+ //let num = 57;
+
+ //for (let i = 1; i < 10; i++) {
+   // if (i == 7) {
+        /* break; */
+    //    continue;
+    //}
+    //console.log(i);
+    //}
+
+
+
+/* let num = 45;
+
+while (num < 50) {
+    console.log(num);
+    num++;
+}
+ */
+
+/* let num = 45;
+
+do {
+    console.log(num);
+    num++;
+}
+
+while (num < 50)
+ */
+/* 
+let num = 45;
+for (let i = 1; i <10; i++) {
+   if (i === 6) {
+       break;
+   }
+    console.log(num);
+    num++;
+} */
+
+

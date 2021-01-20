@@ -1,0 +1,66 @@
+
+/**
+ * Tabs
+ */
+ .tabs {
+	display: flex;
+	flex-wrap: wrap; 
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 0.5rem 1rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+    background: rgb(210, 214, 218);  
+    font-weight: bold;
+    transition: background ease 0.2s;
+    width: 180px;
+    border-radius: 0.5em 0.5em 0em 0em;
+    border-bottom: 1px solid white; 
+}
+.tabs .tab {
+    order: 99; 
+    flex-grow: 1;
+    width: 100%;
+    height: 450px;
+    display: none;
+    padding: 1rem;
+    background: rgb(169, 179, 189);
+  /* border: solid 1px black; */
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+    background: rgb(169, 179, 189);
+    border-bottom: none;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+
+.calctut {
+  min-height: 70vh; 
+  box-sizing: border-box; 
+  font-family: 'Times New Roman', Times, serif; 
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 70rem; 
+  margin: 5vh auto;
+  font-size: 112%;
+}
+
